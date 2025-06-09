@@ -5,7 +5,56 @@
   overflow: hidden;
 }
 
-main{
+
+aside{
+  padding: 1.25rem;  
+}
+
+.aside-container {
+  display: flex;  
+  max-width: 25rem;
+  position: relative;
+  margin-bottom: 1.25rem; 
+  border-radius: 3rem;
+  }
+
+  .capa {    
+    position: absolute;    
+    margin-left: 3rem ;    
+    margin-top: 3rem ;
+  }
+
+  .festa {
+    width: 2.865rem;
+    
+  }
+
+.logo {  
+  font: var(--logo);
+  width: 21rem;
+  height: 3.375rem;
+  color: #FF598B;
+  margin-top: .9rem;
+}
+
+.crie {  
+    font: var(--Body-md);
+  color: #F9F9F9;
+  width: 21rem;
+  height: 1.375rem;
+  margin-top: .5rem;
+ }
+
+ .sobre {
+  border-image: var(--input-placeholder);
+  font: var(--Heading-sd);
+  color: var(--text-heading);
+  display: flex;
+  gap: .75rem;
+ }
+
+ main{  
+  border: solid 1px rgb(242, 0, 255);
   overflow: auto;
   padding: 1.25rem;
   background-color: var(--shape-body);
@@ -15,14 +64,26 @@ main{
 }
 
 .main-container{
-max-width: 51.25rem;
-}
+  display: grid;
+  border: solid 1px blue;
+  max-width: 51.25rem;
+  border-radius: 3rem;  
+  justify-content: center;
+  }
+  
+   .convite {
+    border: solid 1px rgb(13, 157, 46);
+    width: 35rem;
+    height: 2.81rem;
+    margin-top: 5rem;    
+    margin-bottom: 2.5rem;
+    color: var(--text-heading);
+    font: var(--Heading-md);
+   }    
+   
+.part-one{
+  border: solid 1px rgb(194, 10, 10);
+  width: 35rem;
+  height: 31.25rem;}
 
-aside{
-  padding: 1.25rem;  
-}
-
-.aside-container {
-  max-width: 25rem;
-}
 
