@@ -5,6 +5,7 @@
 }
 
 :root {
+
   --brand-light:#59B2FF ;
   --brand-dark:#1D6FB6 ;
   --brand-mig:#3487CF ;
@@ -42,4 +43,12 @@
   --text: 400 16px/140% var(--font-family);
   --text-sm: 400 14px/160% var(--font-family);
 }
+
+body {
+  overflow: hidden;
+  width: 80rem;
+  height: 48rem;
+  background-color: var(--shape-background);
+  border-radius: 1.25rem;
+ }
 
