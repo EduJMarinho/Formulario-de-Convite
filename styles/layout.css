@@ -1,13 +1,12 @@
 #app {
   display: grid;
   grid-template-columns: 32.8% 67.2%;
-  height: 100vh;
+   border-radius: .3rem;
   overflow: hidden;
 }
 
-
 aside{
-  padding: 1.25rem;  
+  padding: 1.25rem;   
 }
 
 .aside-container {
@@ -15,7 +14,6 @@ aside{
   max-width: 25rem;
   position: relative;
   margin-bottom: 1.25rem; 
-  border-radius: 3rem;
   }
 
   .capa {    
@@ -25,8 +23,7 @@ aside{
   }
 
   .festa {
-    width: 2.865rem;
-    
+    width: 2.865rem;    
   }
 
 .logo {  
@@ -38,29 +35,31 @@ aside{
 }
 
 .crie {  
-    font: var(--Body-md);
+  font: var(--Body-md);
   color: #F9F9F9;
   width: 21rem;
   height: 1.375rem;
   margin-top: .5rem;
  }
 
- .sobre {
-  border-image: var(--input-placeholder);
+ .sobre {  
+  border: solid 1px rgb(242, 0, 255);
   font: var(--Heading-sd);
   color: var(--text-heading);
   display: flex;
   gap: .75rem;
- }
-
+ } 
+ 
  main{  
   border: solid 1px rgb(242, 0, 255);
   overflow: auto;
   padding: 1.25rem;
-  background-color: var(--shape-body);
+  background-image: url(../assets/imagens/back01.jpg);  
+  background-size: cover;
   width: 51.25rem;
   height: 142.187rem;
-  margin: 1.25rem 1.25rem auto 1.25rem;
+  margin: 1.25rem 1.25rem auto 1.25rem;  
+  border-radius: .3rem;
 }
 
 .main-container{
@@ -68,11 +67,10 @@ aside{
   border: solid 1px blue;
   max-width: 51.25rem;
   border-radius: 3rem;  
-  justify-content: center;
+  justify-content: center;  
   }
   
    .convite {
-    border: solid 1px rgb(13, 157, 46);
     width: 35rem;
     height: 2.81rem;
     margin-top: 5rem;    
@@ -81,9 +79,6 @@ aside{
     font: var(--Heading-md);
    }    
    
-.part-one{
-  border: solid 1px rgb(194, 10, 10);
-  width: 35rem;
-  height: 31.25rem;}
+
 
 

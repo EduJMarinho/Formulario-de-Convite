@@ -22,6 +22,7 @@
 
 </head>
 <body>
+  
  <div id="app">
      
     <aside>
@@ -36,7 +37,7 @@
       </div>
     </aside>
 
-    <main> 
+    <main>       
 
       <div class="main-container">
         <p class="convite">Crie seu convite</p>
@@ -44,13 +45,79 @@
         <section class="part-one">
           <div class="sobre">
           <img src="assets/icons/sobre.svg" alt="sobre o evento">
-          <p>Sobre o evento</p>          
+          <p>Sobre o evento</p>     
           </div>
 
-        </section>
-      </div>
+            <form method="post" enctype="multipart/form-data">
 
-    </main>
+              <fieldset class="one-section">
+                
+                <div class="evento">
+                <label for="evento">Título</label>
+                <input 
+                id="evento"
+                name="evento"
+                type="text"
+                placeholder="Nome do Evento">
+                </div>
+
+                <div class="inicio">
+                <label for="inicio">Início</label>
+                <input 
+                id="inicio"
+                name="inicio"
+                type="text"
+                lang="pt-br"
+                placeholder="DD/MM/AAAA, --:--">
+                </div>
+
+                <div class="fim">
+                <label for="fim">Fim</label>
+                <input 
+                id="fim"
+                name="fim"
+                type="text"
+                lang="pt-br"
+                placeholder="DD/MM/AAAA, --:--">
+                </div>
+
+
+
+
+
+
+
+                
+
+
+                <div class="local">
+                <label for="local">Local</label>
+                <input 
+                id="local"
+                name="local"
+                type="text"
+                placeholder="Link ou endereço">
+                </div>  
+                
+                <div class="descricao">
+                  <label for="descricao">Descrição</label>
+                  <textarea name="descricao" id="descricao"
+                  rows="8"
+                  placeholder="Escreva sobre os detalhes do evento">
+                  </textarea>
+                </div>
+
+                
+                </div>  
+              </fieldset>
+
+            </form>          
+        </section>
+
+
+      </div>
+      
+      </main>
 
   </div>
 

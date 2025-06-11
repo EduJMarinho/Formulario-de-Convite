@@ -1,0 +1,77 @@
+    .part-one{      
+  width: 35rem;
+  height: 31.25rem;  
+  color: rgb(233, 233, 250);   
+  }
+
+  input, textarea, select {
+    appearance: none;
+    width: 100%;
+    border-radius: .5rem;     
+    padding: .75rem 1rem;  
+    background: transparent; border: .1rem solid #2d3642; color: #000;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: .02rem solid rgba(174, 55, 44, 0.675);
+      outline-offset: .1px;
+     /* placeholder: Texto;*/
+    }
+  label {
+  font: var(--Body-sm);
+  color: var(--text-body) ; 
+  display: block;
+  margin-bottom: .25rem;
+  }
+
+  form {
+  width: 35rem;
+  height: 126.87rem;
+  border: solid 1px rgb(254, 71, 4);
+  /*opacity: 70%; */
+  }
+
+  .one-section {
+    border: solid 2px rgb(13, 247, 5);
+    margin-top: 1rem;
+    /*border: none;*/  
+    gap: 2rem;     
+    display: grid;    
+    grid-template-areas: 
+    'a  a'
+    'b  c'
+    'd  e'
+    'f  f'  ;
+  }
+
+  .evento {
+    grid-area: a;
+    height: 3rem; 
+    gap: .5rem;       
+  }
+  
+  .inicio {
+    grid-area: b;
+    height: 3rem;
+  }
+
+  .fim {
+    grid-area: c;
+    height: 3rem;
+  }
+
+  .tipo { /* elemento a ser colocado*/
+    grid-area: d;
+    height: 3rem;
+  }
+
+  .local {
+    grid-area: e;
+    height: 3rem;
+  }
+
+  .descricao {
+    grid-area: f;
+  }
+
+  
