@@ -1,8 +1,8 @@
 #app {
   display: grid;
   grid-template-columns: 32.8% 67.2%;
-   border-radius: .3rem;
-  overflow: hidden;
+  border-radius: .3rem;
+  overflow: hidden; 
 }
 
 aside{
@@ -13,7 +13,7 @@ aside{
   display: flex;  
   max-width: 25rem;
   position: relative;
-  margin-bottom: 1.25rem; 
+  margin-bottom: 1.25rem;   
   }
 
   .capa {    
@@ -62,7 +62,7 @@ aside{
   border-radius: .3rem;
 }
 
-.main-container{
+  .main-container{
   display: grid;
   border: solid 1px blue;
   max-width: 51.25rem;

@@ -10,13 +10,16 @@
     border-radius: .5rem;     
     padding: .75rem 1rem;  
     background: transparent; border: .1rem solid #2d3642; color: #000;
-    }
+  }
 
-    input:focus, select:focus, textarea:focus {
+    
+    input:focus, select:focus, textarea:focus {        
       outline: .02rem solid rgba(174, 55, 44, 0.675);
       outline-offset: .1px;
-     /* placeholder: Texto;*/
+      
+       /* placeholder: Texto;*/
     }
+
   label {
   font: var(--Body-sm);
   color: var(--text-body) ; 
@@ -60,7 +63,8 @@
     height: 3rem;
   }
 
-  .tipo { /* elemento a ser colocado*/
+  .tipo { 
+    
     grid-area: d;
     height: 3rem;
   }
