@@ -1,0 +1,45 @@
+@import url(switch.css);
+
+.subject {
+ margin-top: 1.75rem;
+}
+
+.container-cards {
+margin-top: 1rem;
+width: 35rem;
+height: 20.31rem;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 0.5rem;
+text-align: center;
+}
+
+.div-card { 
+  border-radius: .3rem  ;
+  background-color: #222121;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; 
+
+  input{
+  display: none;  
+  cursor: pointer;
+ } 
+  label{ 
+  cursor: pointer;  }  
+}
+
+.div-card:hover {
+  background-color: #495360;
+  border-radius: .2rem;
+}
+
+.div-card input:checked + .label-card{
+  border: solid .15rem #59B2FF;   
+}
+
+.label-card {
+ border-radius: .4rem;
+}
+

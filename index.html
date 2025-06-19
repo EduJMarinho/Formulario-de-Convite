@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+  <style>
+    ::placeholder {
+      color:rgb(126, 122, 118);
+    }
+  </style>      
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,40 +24,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
   <title>Formulário de Convite</title>
-
+  
   <link rel="stylesheet" href="styles/index.css">
 
-  </head>        
-  <body>
-  
-    <div id="app">
-     
+</head>
+<body>
+  <div id="app">
+    
     <aside>
       <div class="aside-container">
-        <img src="assets/imagens/Background.svg" alt="festivite">
 
-        <header class="capa" >        
-        <img class="festa" src="assets/imagens/Logo.svg" alt="logo">
+        <img class="Bolo" src="assets/imagens/Background.svg" alt="festivite">
+        
+        <header class="capa">        
+        <img class="festa" src="assets/imagens/Logo.svg" alt="festa">
         <p class="logo">Festivite</p>  
         <p class="crie">Crie um convite digital para o seu evento</p>
-        </header>
+        </header> 
       </div>
     </aside>
 
-    <main>       
+    <main>
+      <h1>Crie seu convite</h1>
+
+      <form method="post" enctype="multipart/form-data">
 
       <div class="main-container">
-        <p class="convite">Crie seu convite</p>
-
-        <section class="part-one">
+        
+          <section class="section-one">
           <div class="sobre">
-          <img src="assets/icons/sobre.svg" alt="sobre o evento">
-          <p>Sobre o evento</p>     
+            <img src="assets/icons/sobre.svg" alt="">
+            <h2>Sobre o evento</h2>
           </div>
 
-            <form method="post" enctype="multipart/form-data">
-
-              <fieldset class="one-section">
+         <fieldset class="one-section">
                 
                 <div class="evento">
                 <label for="evento">Título</label>
@@ -68,7 +75,7 @@
                 name="inicio"
                 type="text"
                 lang="pt-br"              
-                placeholder="DD/MM/AAAA, --:--">
+                placeholder="DD/MM/AAAA, --:--">                
                 </div>
 
                 <div class="fim">
@@ -79,46 +86,30 @@
                 type="text"
                 lang="pt-br"
                 placeholder="DD/MM/AAAA, --:--">
-                </div>
+                </div>                    
 
+                <div class="actions-wrapper">
+                <label for="tipo">Tipo</label>                
 
+                <div class="check" >
+                  
+                <input type="checkbox" id="chk">
+                <label for="chk" class="switch">
 
+                  <span class="slider"></span>
 
-
-               <div class="radio-one">  
-
-                <div class="header-tipo">
-                <label>Tipo</label>
-                
-                <div>
-                <input 
-                id="tipo-a"
-                name="tipo-a"
-                type="radio"
-                value="tipo-a">
-                <img src="assets/icons/presenci01.svg" alt="ícone presencial">
-                <label for="tipo-a">Presencial</label>
-                </div>
-
-                <div class="tipo-b">
-                <label>Tipo</label>
-                <input 
-                id="tipo-b"
-                name="tipo-b"
-                type="radio"
-                value="tipo-b">
-                <img src="assets/icons/Line01.svg" alt="ícone online">
-                <label for="tipo-b">Online</label>
-                </div>  
-
-                </div>
-
-                </div>
-
-
-
-                
-
+                  <div class="model-personal">
+                  <img class="img-check-impress" 
+                  src="assets/icons/building-2.svg" alt="icone de impressora">              
+                  <label class="text-check" for="person">Presencial</label>                  
+                  <img 
+                  class="img-check-video"
+                  src="assets/icons/video.svg" alt="icone de impressora">                  
+                  <label class="text-check" for="online">Online</label>
+                  </div>                  
+                  </div>
+                </label>                           
+                </div>                        
 
                 <div class="local">
                 <label for="local">Local</label>
@@ -130,26 +121,274 @@
                 </div>  
                 
                 <div class="descricao">
-                  <label for="descricao">Descrição</label>
-                  <textarea name="descricao" id="descricao"
-                  rows="8"
-                  placeholder="Escreva sobre os detalhes do evento">
-                  </textarea>
-                </div>
+                <label for="descricao">Descrição</label >
+                <textarea name="descricao" id="descricao" rows="5"                 
+                placeholder="Escreva sobre os detalhes do evento">
+                </textarea>                
+                </div> 
 
-                
-                </div>  
-              </fieldset>
-
-            </form>          
+                                        
         </section>
+
+        <section class="section-two">
+                    
+            <div class="personal">
+            <img src="assets/icons/paintbrush-vertical.svg" alt="icone de pincel">
+            <h2>Personalização</h2>
+            </div>
+
+            <div class="paleta-cor">
+            <label for="texto">Cor principal</label>   
+            
+            
+            <div class="container-balls">   
+        
+            <label class="switch2">
+            <span class="switch-text"></span>
+            <div class="switch-wrapper">
+            <input type="checkbox" class="ball-one" name="ball-one"> 
+            <span class="switch-button"></span>  
+            <span id="button-switch"></span> 
+            </div>
+            </label>   
+        
+            <label class="switch2">
+            <span class="switch-text"></span>
+            <div class="switch-wrapper">
+            <input type="checkbox" class="ball-one" name="ball-one"> 
+            <span class="switch-button"></span>  
+            <span id="button-switch2"></span> 
+            </div>
+            </label>  
+        
+        
+            <label class="switch2">
+            <span class="switch-text"></span>
+            <div class="switch-wrapper">
+            <input type="checkbox" class="ball-one" name="ball-one"> 
+            <span class="switch-button"></span>  
+            <span id="button-switch3"></span> 
+            </div>
+            </label>  
+        
+            <label class="switch2">
+            <span class="switch-text"></span>
+            <div class="switch-wrapper">
+            <input type="checkbox" class="ball-one" name="ball-one"> 
+            <span class="switch-button"></span>  
+            <span id="button-switch4"></span> 
+            </div>
+            </label>  
+        
+            <label class="switch2">
+            <span class="switch-text"></span>
+            <div class="switch-wrapper">
+            <input type="checkbox" class="ball-one" name="ball-one"> 
+            <span class="switch-button"></span>  
+            <span id="button-switch5"></span> 
+            </div>
+            </label>  
+        
+            <label class="switch2">
+            <span class="switch-text"></span>
+            <div class="switch-wrapper">
+            <input type="checkbox" class="ball-one" name="ball-one"> 
+            <span class="switch-button"></span>  
+            <span id="button-switch6"></span> 
+            </div>
+            </label>  
+        
+            <label class="switch2">
+            <span class="switch-text"></span>
+            <div class="switch-wrapper">
+            <input type="checkbox" class="ball-one" name="ball-one"> 
+            <span class="switch-button"></span>  
+            <span id="button-switch7"></span> 
+            </div>
+            </label>  
+        
+            <label class="switch2">
+            <span class="switch-text"></span>
+            <div class="switch-wrapper">
+            <input type="checkbox" class="ball-one" name="ball-one"> 
+            <span class="switch-button"></span>  
+            <span id="button-switch8"></span> 
+            </div>
+            </label>  
+
+            <label class="switch2">
+            <span class="switch-text"></span>
+            <div class="switch-wrapper">
+            <input type="checkbox" class="ball-one" name="ball-one"> 
+            <span class="switch-button"></span>  
+            <span id="button-switch9"></span> 
+            </div>
+            </label>  
+        
+            <label class="switch2">
+            <span class="switch-text"></span>
+            <div class="switch-wrapper">
+            <input type="checkbox" class="ball-one" name="ball-one"> 
+            <span class="switch-button"></span>  
+            <span id="button-switch10"></span> 
+            </div>
+            </label>  
+        
+            <label class="switch2">
+            <span class="switch-text"></span>
+            <div class="switch-wrapper">
+            <input type="checkbox" class="ball-one" name="ball-one"> 
+            <span class="switch-button"></span>  
+            <span id="button-switch11"></span> 
+            </div>
+            </label>  
+            </div>  </div>  
+
+            <div class="subject">
+            <label for="texto">Tema do evento</label>
+             </div>
+
+            <div class="container-cards"> 
+
+           <div class="div-card">   
+            <input type="checkbox" id="ibirthday" name="birthday">         
+           <label for="ibirthday" class="label-card">                           
+           <img class="img-cards" src="assets/imagens/Niver.svg" alt="niver">  
+           <p>Aniversário</p>   
+           </label>       
+           </div>   
+              
+           <div class="div-card">   
+            <input type="checkbox" id="ichild" name="child">         
+           <label for="ichild" class="label-card">                           
+           <img class="img-cards" src="assets/imagens/infantil.svg" alt="Infantil">  
+           <p>Infantil</p>   
+           </label>       
+           </div>              
+           
+           <div class="div-card">   
+            <input type="checkbox" id="igraduation" name="graduation">         
+           <label for="igraduation" class="label-card">                           
+           <img class="img-cards" src="assets/imagens/formatura.svg" alt="formatura">  
+           <p>formatura</p>   
+           </label>       
+           </div>              
+           
+           <div class="div-card">   
+            <input type="checkbox" id="imarriage" name="marriage">         
+           <label for="imarriage" class="label-card">                           
+           <img class="img-cards" src="assets/imagens/casamento.svg" alt="casamento">  
+           <p>casamento</p>   
+           </label>       
+           </div>                       
+
+           <div class="div-card">   
+            <input type="checkbox" id="ibaby" name="baby">         
+           <label for="ibaby" class="label-card">                           
+           <img class="img-cards" src="assets/imagens/bebe.svg" alt="Chá de bebê">  
+           <p>Chá de bebê</p>   
+           </label>       
+           </div>      
+           
+           <div class="div-card">   
+            <input type="checkbox" id="ipanela" name="graduation">         
+           <label for="ipanela" class="label-card">                           
+           <img class="img-cards" src="assets/imagens/panela.svg" alt="panela">  
+           <p>Chá de panela</p>   
+           </label>       
+           </div>              
+                      
+           <div class="div-card">   
+            <input type="checkbox" id="icarnaval" name="graduation">         
+           <label for="icarnaval" class="label-card">                           
+           <img class="img-cards" src="assets/imagens/carnaval.svg" alt="carnaval">  
+           <p>Carnaval</p>   
+           </label>       
+           </div>              
+           
+            <div class="div-card">   
+            <input type="checkbox" id="ipascoa" name="pascoa">         
+           <label for="ipascoa" class="label-card">                           
+           <img class="img-cards" src="assets/imagens/pascoa.svg" alt="pascoa">  
+           <p>Páscoa</p>   
+           </label>       
+           </div> 
+
+           <div class="div-card">   
+            <input type="checkbox" id="ijohn" name="john">         
+           <label for="ijohn" class="label-card">                           
+           <img class="img-cards" src="assets/imagens/joao.svg" alt="john">  
+           <p>São João</p>   
+           </label>       
+           </div>              
+          
+           <div class="div-card">   
+            <input type="checkbox" id="ihalloween" name="graduation">         
+           <label for="ihalloween" class="label-card">                           
+           <img class="img-cards" src="assets/imagens/halloween.svg" alt="halloween">  
+           <p>Halloween</p>   
+           </label>       
+           </div>              
+           
+           
+           
+           <div class="div-card">   
+            <input type="checkbox" id="inatal" name="natal">         
+           <label for="inatal" class="label-card">                           
+           <img class="img-cards" src="assets/imagens/natal.svg" alt="natal">  
+           <p>Natal</p>   
+           </label>       
+           </div>              
+           
+           <div class="div-card">   
+            <input type="checkbox" id="ioutros" name="outros">         
+           <label for="ioutros" class="label-card">                           
+           <img class="img-cards" src="assets/imagens/outro.svg" alt="outros">  
+           <p>Outros</p>   
+           </label>       
+           </div>         
+           
+
+            </div>            
+
+        <div class="switch-toggle">
+
+          <div class="style">
+            <label for="texto">Estilo</label>
+  <div class="space">
+          <label 
+         for="my-switch" class="l-switch">           
+            <div class="wrapper-switch" >
+                <input type="checkbox" id="my-switch" name="my-switch">              
+              <span class="button-switch" ></span> 
+            <span class="dark" >Escuro</span>
+            <span class="clean" >Claro</span>
+            </div>
+
+          </label>
+  </div>
+          </div>
+
+
+          <div class="file-input">
+
+          </div>
+
+
+        </div>
+
+
+
+
+            </section>
+
 
 
       </div>
-      
-      </main>
+      </form>
+    </main>
 
-  </div>
-
+    </div>
+  </div>  
 </body>
 </html>

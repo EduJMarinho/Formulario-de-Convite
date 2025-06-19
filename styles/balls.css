@@ -1,0 +1,166 @@
+ @import url(cards.css);
+ 
+ .paleta-cor {
+   margin-top: 1.3rem;
+   } 
+   
+.section-two {  
+  margin-top: 3rem ;
+ }
+ 
+.container-balls {  
+  width: 35rem;
+  height: 2.5rem;  
+  display: flex;  
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+
+.switch2 {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; 
+}
+#button-switch {
+  background-color: #59B2FF;
+  position: absolute;
+  width: 1.75rem;  
+  height: 1.75rem;
+  border-radius: 50%; 
+  margin: auto auto auto .375rem;
+  pointer-events: none
+}
+.switch2 .switch-wrapper {
+  display: flex; 
+  position: relative; 
+  align-items: center;
+  }  
+.switch2 .switch-wrapper .switch-button {
+  position: relative;  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  border-radius: 2.5rem;  
+}
+.switch2 .switch-wrapper input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch2 .switch-wrapper .switch-button {
+  content: "";
+  width: 2.5rem;  
+  height: 2.5rem;
+  position: relative;  
+  border-radius: 50%;
+  transition: 0.2s all ease; 
+  background-color: #2D3136;  
+}
+.switch2 .switch-wrapper .switch-button:hover{
+  background-color: #495360;
+}
+.switch2 .switch-wrapper input:checked + .switch-button {
+  background-color: #2D3136;
+  border: .18rem solid #59B2FF;     
+}
+.switch2 .switch-wrapper input:checked + .switch-button:before {
+  transform: translateX(0);
+}
+
+#button-switch2 {
+  background-color: #6A59FF;
+  position: absolute;
+  width: 1.75rem;  
+  height: 1.75rem;
+  border-radius: 50%; 
+  margin: auto auto auto .375rem;
+  pointer-events: none
+}
+#button-switch3 {
+  background-color: #B259FF;
+  position: absolute;
+  width: 1.75rem;  
+  height: 1.75rem;
+  border-radius: 50%; 
+  margin: auto auto auto .375rem;
+  pointer-events: none
+}
+#button-switch4 {
+  background-color: #FF59F9;
+  position: absolute;
+  width: 1.75rem;  
+  height: 1.75rem;
+  border-radius: 50%; 
+  margin: auto auto auto .375rem;
+  pointer-events: none
+}
+#button-switch5 {
+  background-color: #FF598B;
+  position: absolute;
+  width: 1.75rem;  
+  height: 1.75rem;
+  border-radius: 50%; 
+  margin: auto auto auto .375rem;
+  pointer-events: none
+}
+#button-switch6 {
+  background-color: #FF5959;
+  position: absolute;
+  width: 1.75rem;  
+  height: 1.75rem;
+  border-radius: 50%; 
+  margin: auto auto auto .375rem;
+  pointer-events: none
+}
+#button-switch7 {
+  background-color: #FF8B59;
+  position: absolute;
+  width: 1.75rem;  
+  height: 1.75rem;
+  border-radius: 50%; 
+  margin: auto auto auto .375rem;
+  pointer-events: none
+}
+#button-switch8 {
+  background-color: #FFCD59;
+  position: absolute;
+  width: 1.75rem;  
+  height: 1.75rem;
+  border-radius: 50%; 
+  margin: auto auto auto .375rem;
+  pointer-events: none
+}
+#button-switch9 {
+  background-color: #E1FF59;
+  position: absolute;
+  width: 1.75rem;  
+  height: 1.75rem;
+  border-radius: 50%; 
+  margin: auto auto auto .375rem;
+  pointer-events: none
+}
+#button-switch10 {
+  background-color: #59FF91;
+  position: absolute;
+  width: 1.75rem;  
+  height: 1.75rem;
+  border-radius: 50%; 
+  margin: auto auto auto .375rem;
+  pointer-events: none
+}
+#button-switch11 {
+  background-color: #59FFF9;
+  position: absolute;
+  width: 1.75rem;  
+  height: 1.75rem;
+  border-radius: 50%; 
+  margin: auto auto auto .375rem;
+  pointer-events: none
+}

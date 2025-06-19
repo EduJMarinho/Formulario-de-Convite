@@ -1,81 +1,135 @@
-    .part-one{      
-  width: 35rem;
-  height: 31.25rem;  
-  color: rgb(233, 233, 250);   
-  }
+@import url(balls.css);
 
-  input, textarea, select {
+textarea, select, button{
+    font: var(--Body-sm);
     appearance: none;
     width: 100%;
     border-radius: .5rem;     
     padding: .75rem 1rem;  
-    background: transparent; border: .1rem solid #2d3642; color: #000;
-  }
+    background: var(--shape-background); border: .1rem solid #2d3642; color: #f1e8e8;     
+    }    
 
-    
-    input:focus, select:focus, textarea:focus {        
-      outline: .02rem solid rgba(174, 55, 44, 0.675);
-      outline-offset: .1px;
-      
-       /* placeholder: Texto;*/
+    .sobre {
+      display: flex;
+      gap: 1rem ;
     }
-
-  label {
+        
+  label {  
   font: var(--Body-sm);
   color: var(--text-body) ; 
   display: block;
-  margin-bottom: .25rem;
+  margin-bottom: .5rem; 
   }
 
-  form {
-  width: 35rem;
-  height: 126.87rem;
-  border: solid 1px rgb(254, 71, 4);
-  /*opacity: 70%; */
-  }
-
-  .one-section {
-    border: solid 2px rgb(13, 247, 5);
-    margin-top: 1rem;
-    /*border: none;*/  
-    gap: 2rem;     
+  .one-section {         
     display: grid;    
     grid-template-areas: 
     'a  a'
     'b  c'
     'd  e'
-    'f  f'  ;
-  }
+    'f  f' ; 
+    gap: 1rem;   
+    margin-top: 1.3rem; 
+    border-style: none;
 
+      input {
+      font: var(--Body-sm);
+      appearance: none;
+      width: 100%;
+      border-radius: .5rem;     
+      padding: .75rem 1rem;  
+      background: var(--shape-background); border: .1rem solid #2d3642; color: #f1e8e8;     
+      }   
+  }
+  
   .evento {
-    grid-area: a;
-    height: 3rem; 
-    gap: .5rem;       
-  }
-  
+    grid-area: a; 
+    width: 35rem;     
+    height: 3rem;
+  }  
   .inicio {
-    grid-area: b;
-    height: 3rem;
+    grid-area: b; 
+    margin-top: 1.5rem;  
   }
-
   .fim {
-    grid-area: c;
-    height: 3rem;
+    grid-area: c; 
+    margin-top: 1.5rem;    
   }
+  .check {     
+    border-radius: .5rem;    
+    grid-area: d;        
+    background: #000 ;        
+  }     
+      .local {
+        grid-area: e;    
+      }
+      .descricao {
+        grid-area: f;        
+      }
 
-  .tipo { 
-    
-    grid-area: d;
-    height: 3rem;
-  }
+      #chk{
+        display: none;      
+      }
 
-  .local {
-    grid-area: e;
-    height: 3rem;
-  }
+    .switch {     
+      position: relative;
+      background-color: var(--shape-background);
+      border: .10rem solid #2d3642; 
+      border-radius: .5rem;
+      display: flex;
+      align-items: center;      
+      transition: all .5s ease-in-out;
+      cursor: pointer;      
+    }
 
-  .descricao {
-    grid-area: f;
-  }
+    .model-personal {
+      display: flex;
+      position: absolute;
+      gap: .5rem;
+      align-items: center;
+       cursor: pointer;       
+       }
+       
+      .img-check-impress{
+        margin-left: 1.35rem;
+        width: 1rem;
+        height: 1rem;        
+      }
 
-  
+     .img-check-video{
+      margin-top: .1rem;
+        margin-left: 3rem;
+        width: 1.15rem;
+        height: 1.15rem;           
+      }      
+
+      .text-check {
+        margin-top: .5rem;
+         font: var(--Body-sm);
+        color: #a39d9d;  
+        pointer-events: none     
+      }     
+
+       .slider{
+      position: relative;
+      background-color: #222121;
+      border-radius: .4rem;
+      width: 8.5rem;
+      height: 2.6rem;
+      transition: all .3s ease-in-out;
+      cursor: pointer;   
+    }   
+
+    #chk:checked ~ .switch .slider {
+      transform: translateX(8.3125rem);      
+    }
+
+    .personal {
+      display: flex;
+      gap: 1rem;      
+    }
+
+
+   
+
+     

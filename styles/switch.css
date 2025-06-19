@@ -1,0 +1,90 @@
+@import url(file-input.css);
+
+.switch-toggle {  
+  display: flex; 
+  margin-top: 1.75rem;
+  border: solid 1px #59B2FF;
+}
+
+.space {
+  margin-top: 1.75rem;
+}
+.l-switch {    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; 
+  position: relative;  
+}
+
+.l-switch .wrapper-switch{  
+  display: inline-block;
+  width: 3.75rem;
+  height: 2rem;
+  position: relative;
+}
+
+.l-switch .wrapper-switch .button-switch {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+display: flex;
+justify-content: space-between;
+border-radius: 2.5rem;
+background-color: #222121;
+}
+
+.l-switch .wrapper-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.l-switch .wrapper-switch .button-switch::before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  left: .25rem;
+  bottom: .25rem;
+  border-radius: 50%;
+  transition: .4s all ease;
+  background-color: rgb(198, 231, 243);
+}
+
+.l-switch .wrapper-switch input:checked + .button-switch {
+  background-color: #59B2FF; 
+}
+
+.l-switch .wrapper-switch input:checked + .button-switch::before {
+  transform: translateX(1.75rem) ;
+} 
+
+.clean, .dark {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: .875rem;
+  color: rgb(224, 221, 221);
+  padding-left: .625rem;
+  margin-left: 3.5rem;
+}
+
+.clean {
+  left: 10px;
+}
+
+.dark {
+  left: 10px;
+}
+
+input:checked ~ .clean {
+  display: block;
+}
+
+input:not(:checked) ~ .dark {
+  display: block;
+}
