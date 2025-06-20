@@ -4,6 +4,7 @@
   box-sizing: border-box;   
 }
 
+
 :root {
   --font-family-leckerli: 'Leckerli One', sans-serif;
   --logo: 500 2.5rem var(--font-family-leckerli);
@@ -51,7 +52,6 @@ body {
   height: 100%;  
 }
 
-
 textarea, select, button{
     font: var(--Body-sm);
     appearance: none;
@@ -60,3 +60,7 @@ textarea, select, button{
     padding: .75rem 1rem;  
     background: var(--shape-background); border: .1rem solid #2d3642; color: #fff;     
     }    
+
+    ::placeholder {
+    color:var(--input-placeholder);
+}
