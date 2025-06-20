@@ -96,7 +96,7 @@ footer{
   display: flex;
   gap: .7rem;
   align-items: center;
-margin-bottom: .2rem;
+  margin-bottom: .2rem;
 }
 
 .slide-label { 
@@ -107,7 +107,48 @@ margin-bottom: .2rem;
 }
 input[type="checkbox"]:checked + .slide-label {  
    background-image: url(../assets/icons/Check-Blue.svg);
-   transition: width 6s ease-in-out ;
+   transition: width 9s ease, 20s linear;
 }
+
+.action-wrapper{ 
+display: flex;
+justify-content: flex-end;
+width: 560px;
+}
+
+.button-action{ 
+  display: flex;
+  width: 11.06rem;
+  height: 3rem;   
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+  label {
+   margin-top: .4rem;
+   
+   font-weight: bold;
+  }
+  img {
+    width: 17.92px;
+    height: 12.92px;
+  } 
+}
+
+.backg {
+background-color: var(--brand-dark);
+border-radius: .5rem;
+margin-top: 3rem;
+}
+
+.backg:hover{
+ background-color: var(--shape-hover);
+ transition: width 0.9s ease-in, background-color 0.3s linear;
+ }
+
+ 
+
+
+
+
 
    
