@@ -14,13 +14,16 @@
    height: 2.5rem;
    gap: .5rem;
    border-radius: .5rem;
+
    img {
       width: 1rem;
       height: 1rem;
    }
+
    label {
       margin-top: .5rem;
    }
+
    input{
       display: none;
    }
@@ -32,7 +35,7 @@
 
  .wrapper-part {
    display: block;  
-    position: relative;
+   position: relative;
     
  }
  .text-file {
@@ -58,4 +61,3 @@ input:checked ~ .select {
 input:not(:checked) ~ .no-select {
   display: block;
 }
-

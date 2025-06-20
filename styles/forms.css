@@ -38,14 +38,17 @@
     width: 35rem;     
     height: 3rem;
   }  
+
   .inicio {
     grid-area: b; 
     margin-top: 1.5rem;  
   }
+
   .fim {
     grid-area: c; 
     margin-top: 1.5rem;    
   }
+
   .check {     
     border-radius: .5rem;    
     grid-area: d;        
@@ -119,8 +122,4 @@
       display: flex;
       gap: 1rem;      
     }
-
-
-   
-
      

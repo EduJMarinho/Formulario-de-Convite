@@ -34,7 +34,6 @@ display: flex;
 justify-content: space-between;
 border-radius: 2.5rem;
 background-color: #222121;
-
 }
 
 .l-switch .wrapper-switch input {
@@ -54,7 +53,6 @@ background-color: #222121;
   transition: .4s all ease;
   background-color: #495360;
 }
-
 
 .l-switch .wrapper-switch input:checked + .button-switch {
   background-color: #59B2FF; 
