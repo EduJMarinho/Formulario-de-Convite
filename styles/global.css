@@ -50,3 +50,13 @@ body {
   overflow: hidden;
   height: 100%;  
 }
+
+
+textarea, select, button{
+    font: var(--Body-sm);
+    appearance: none;
+    width: 100%;
+    border-radius: .5rem;     
+    padding: .75rem 1rem;  
+    background: var(--shape-background); border: .1rem solid #2d3642; color: #fff;     
+    }    

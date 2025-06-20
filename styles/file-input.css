@@ -1,6 +1,61 @@
-.file-input {
-   border: solid 1px #e0efe4;
-   margin-left: 4rem;
+@import url(forms-two.css);
+
+.file-input { 
+   margin-left: 4rem;   
 }
 
+.wrapper-file {   
+   margin-top: 1.48rem;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #495360; 
+   width: 7.43rem;
+   height: 2.5rem;
+   gap: .5rem;
+   border-radius: .5rem;
+   img {
+      width: 1rem;
+      height: 1rem;
+   }
+   label {
+      margin-top: .5rem;
+   }
+   input{
+      display: none;
+   }
+}
+
+.wrapper-file:hover{
+   background-color: #222121;
+}
+
+ .wrapper-part {
+   display: block;  
+    position: relative;
+    
+ }
+ .text-file {
+   color: #fff;
+   margin-top: auto;
+   margin-bottom: .7rem;
+   margin-left: .5rem;
+ }
+
+ .select, .no-select {
+   width: 15rem;  
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);  
+  margin-left: 24rem;
+}
+
+input:checked ~ .select {
+  display: block;
+}
+
+input:not(:checked) ~ .no-select {
+  display: block;
+}
 

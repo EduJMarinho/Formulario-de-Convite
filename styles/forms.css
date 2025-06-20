@@ -1,14 +1,5 @@
 @import url(balls.css);
 
-textarea, select, button{
-    font: var(--Body-sm);
-    appearance: none;
-    width: 100%;
-    border-radius: .5rem;     
-    padding: .75rem 1rem;  
-    background: var(--shape-background); border: .1rem solid #2d3642; color: #f1e8e8;     
-    }    
-
     .sobre {
       display: flex;
       gap: 1rem ;

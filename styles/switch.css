@@ -2,13 +2,13 @@
 
 .switch-toggle {  
   display: flex; 
-  margin-top: 1.75rem;
-  border: solid 1px #59B2FF;
+  margin-top: 1.75rem; 
 }
 
 .space {
-  margin-top: 1.75rem;
+  margin-top: 1.75rem; 
 }
+
 .l-switch {    
   display: flex;
   justify-content: center;
@@ -34,6 +34,7 @@ display: flex;
 justify-content: space-between;
 border-radius: 2.5rem;
 background-color: #222121;
+
 }
 
 .l-switch .wrapper-switch input {
@@ -51,14 +52,16 @@ background-color: #222121;
   bottom: .25rem;
   border-radius: 50%;
   transition: .4s all ease;
-  background-color: rgb(198, 231, 243);
+  background-color: #495360;
 }
+
 
 .l-switch .wrapper-switch input:checked + .button-switch {
   background-color: #59B2FF; 
 }
 
 .l-switch .wrapper-switch input:checked + .button-switch::before {
+  background-color: #fff; 
   transform: translateX(1.75rem) ;
 } 
 

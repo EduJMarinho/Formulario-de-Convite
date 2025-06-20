@@ -52,6 +52,7 @@
       <div class="main-container">
         
           <section class="section-one">
+
           <div class="sobre">
             <img src="assets/icons/sobre.svg" alt="">
             <h2>Sobre o evento</h2>
@@ -65,8 +66,8 @@
                 id="evento"
                 name="evento"
                 type="text"
-                placeholder="Nome do Evento">
-                </div>
+                placeholder="Nome do Evento">                 
+              </div>
 
                 <div class="inicio">
                 <label for="inicio">Início</label>
@@ -355,7 +356,7 @@
 
           <div class="style">
             <label for="texto">Estilo</label>
-  <div class="space">
+    <div class="space">
           <label 
          for="my-switch" class="l-switch">           
             <div class="wrapper-switch" >
@@ -366,23 +367,117 @@
             </div>
 
           </label>
-  </div>
+    </div>
           </div>
-
 
           <div class="file-input">
+            <label for="file-input">Foto de capa
 
+              <div class="wrapper-part">
+            <div class="wrapper-file">
+              <img src="assets/icons/select.svg" alt="selecionar">
+              <label for="file-input" class="text-select">Selecionar</label>
+              <input type="checkbox" id="file-input" name="file-input">             
+              <span class="select">Nenhum arquivo selecionado</span>
+              <span class="no-select">img.png</span>                     
+            </div>
+
+          </div>   
+
+          </section>
+
+  <section class="section-three">
+  
+    <div class="date">
+      
+            <img src="assets/icons/data.svg" alt="dados">
+            <h2>Dados para contato</h2>
           </div>
 
+         <fieldset class="three-section">
+                
+                <div class="name">
+                <label for="name" >Nome</label>
+                <input disabled
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Nome completo">                 
+              </div>
 
-        </div>
+              <section class="alert">            
+                  <img src="assets/icons/circle-alert.svg" alt="alerta">
+                  <p>Campo Obrigatório</p>              
+              </section>              
 
+                <div class="e-mail">
+                <label for="e-mail">E-mail</label>
+                <input 
+                id="e-mail"
+                name="e-mail"
+                type="text"
+                lang="pt-br"              
+                placeholder="exemplo@email.com">                
+                </div>
 
+                <div class="fone">
+                <label for="fone">Telefone</label>
+                <input 
+                id="fone"
+                name="fone"
+                type="text"
+                lang="pt-br"
+                placeholder="(99) 99999-9999 ">
+                </div>               
+    
+  </fieldset>
+  </section>        
 
+  <section class="section-four">
 
-            </section>
+    <footer>
 
+      <div class="wrapper-footer">
 
+      <div class="div-footer">        
+        <div class="div-slide">
+    <input type="checkbox" name="privacy" id="privacy">    
+    <label for="privacy" class="slide-label"></label>
+     </div>
+     <div class="div-text">
+    <label for="privacy" >Li e concordo com os <span>Termos e Condições</span>
+      e com a <span>Política de Privacidade</span>
+      </label>   
+    </div>     
+    </div>
+
+    <div class="div-footer">         
+        <div class="div-slide">
+    <input type="checkbox" name="privacy" id="accepted">    
+    <label for="accepted" class="slide-label"></label>
+     </div>
+     <div class="div-text">
+    <label for="accepted" >Aceito receber atualizações por e-mail
+      </label>   
+    </div>      </div>  
+
+    <div class="div-footer">         
+        <div class="div-slide">
+    <input type="checkbox" name="privacy" id="update">    
+    <label for="update" class="slide-label"></label>
+     </div>
+     <div class="div-text">
+    <label for="update" >Aceito receber atualizações por SMS
+      </label>   
+    </div>     
+  </div>  
+  </div>
+
+  <div></div>
+
+  </footer>
+
+  </section>
 
       </div>
       </form>
